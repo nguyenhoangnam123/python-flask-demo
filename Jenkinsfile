@@ -2,15 +2,15 @@ pipeline {
   agent any
   stages {
     stage('Preparing the environment') {
-        steps {
-            sh 'python3 -m pip install -r requirements.txt'
-        }
+      steps {
+        sh 'python3 -m pip install -r requirements.txt'
+      }
     }
 
     stage('Code quality') {
-        steps {
-            sh 'python3 -m pylint app.py'
-        }
+      steps {
+        sh 'python3 -m pylint app.py'
+      }
     }
 
     stage('Unit test') {
