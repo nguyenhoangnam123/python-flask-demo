@@ -8,9 +8,9 @@ pipeline {
     }
 
     stage('Code quality') {
-        steps {
-            sh 'python3 -m pylint app.py'
-        }
+      steps {
+        sh 'python3 -m pylint app.py'
+      }
     }
 
     stage('Unit test') {
