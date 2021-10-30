@@ -15,7 +15,7 @@ pipeline {
 
     stage('Unit test') {
       steps {
-        sh 'python -m pytest'
+        sh 'python3 -m pytest'
       }
     }
 
