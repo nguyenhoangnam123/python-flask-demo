@@ -15,7 +15,7 @@ pipeline {
 
     stage('Unit test') {
       steps {
-        sh 'echo testing code quality'
+        sh 'python -m pytest'
       }
     }
 
