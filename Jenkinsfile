@@ -2,9 +2,9 @@ pipeline {
   agent any
   stages {
     stage('Preparing the environment') {
-        steps {
-            sh 'python3 -m pip install -r requirement.txt'
-        }
+      steps {
+        sh 'python3 -m pip install -r requirement.txt'
+      }
     }
 
     stage('Code quality') {
